@@ -1,0 +1,205 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	padding: 5px;
+	background: white;
+	height: 1754px;	
+	width: 1240px;
+    margin-left: 5px;
+    margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+	h1 {
+		font-size: 18px;
+		font-weight: bold;
+		color: #1b1b1b;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		align: center;
+	}
+	
+	h2 {
+		font-size: 14px;
+		font-weight: bold;
+		color: #1b1b1b;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		text-align: center;
+	}
+	
+	h3 {
+		font-size: 12px;
+		font-weight: bold;
+		color: #1b1b1b;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	
+	h4 {
+		font-size: 10px;
+		font-weight: bold;
+		color: #1b1b1b;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	
+	p {
+		font-size: 10px;
+		font-weight: normal;
+		color: black;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	
+	.header {
+		float: left;
+		width: 100%;
+		text-align: center;
+	}
+		
+	.avatar-column {
+		float: left;
+		width: 10%;
+		padding: 5px 5px;	
+	}
+	
+	.title-column {
+		float: left;
+		width: 70%;
+		padding: 5px 5px;	
+		align: center;
+	}
+	
+	.connect-column {
+		float: left;
+		width: 20%;
+		padding: 5px 5px;	
+		align: left;
+	}
+	
+	.avatar {
+		vertical-align: left;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%
+	}
+	
+	.title-column .card {
+		text-align: center;
+	}
+		
+		/* Create three unequal columns that floats next to each other */
+	.column {
+	  float: left;
+	  padding: 5px;
+	}
+
+	/* Left and right column */
+	.column.side {
+	  width: 25%;
+	}
+
+	/* Middle column */
+	.column.middle {
+	  width: 50%;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+
+	.card {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+		padding: 5px 5px 5px 5px;
+		text-align: left;
+		background-color: white;
+		margin: 2px 2px 2px 2px;
+		}
+		
+	/* Right column */
+	.sidebar {
+		float: left;
+		width: 20%;
+		padding: 5px 5px 5px 5px;
+		text-align: left;
+	}
+	
+		span.skills {
+		  border-radius: 10px;
+		  margin-bottom: 5px;
+		  background-color: #c8c8c8;
+		  font-size: 10px;
+		  font-weight: normal;
+		  color: #1b1b1b;
+		  display: inline-block;
+		  padding: 5px 5px 5px 5px; 
+		}
+		
+		.bar{
+		  background-color: #c8c8c8;
+		  padding: 5px;
+		  border-radius: 10px;
+		  margin-bottom: 5px;
+		  font-size: 10px;
+		  font-weight: normal;
+		  color: white;
+		}
+		.bar::before{
+		  content:  attr(data-skill);
+		  background-color: #1b1b1b;
+		  display: inline-block;
+		  padding: 5px 0 5px 10px;
+		  border-radius: inherit;
+		}
+		.bar::before{
+		  background-color: #1b1b1b;
+		}
+
+		.bar.learning::before{
+		  width: calc(20% - 10px);
+		}
+		.bar.basic::before{
+		  width: calc(40% - 10px);
+		}
+		.bar.intermediate::before{
+		  width: calc(60% - 10px);
+		}
+		.bar.advanced::before{
+		  width: calc(80% - 10px);
+		}
+		.bar.expert::before{
+		  width: calc(100% - 10px);
+		}
+		
+	.footer {
+		float: left;
+		align: center;
+		width: 100%;
+	}
+	
+	.footer .card {
+		float: left;
+		width: 100%;
+		text-align: center;
+	}
+	
+ /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1240px; {
+  .column.side, .column.middle {
+    width: 100%; 
+    padding: 0;	
+	width: 1240px;
+	}
+}
+	
+	
+	
